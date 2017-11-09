@@ -1,0 +1,31 @@
+
+
+
+
+.item {
+  display:flex;
+  flex-direction: column;
+  background-color: lightgreen;
+  width: 120px;
+  height: 50px;
+  margin-left: 22px;
+  border-radius:5px;
+  box-shadow: 10px 10px 5px;
+  border-style:solid;
+
+}
+
+.undermeny {
+  display: none;
+
+}
+.item:hover .undermeny {
+  display: block;
+  background-color: lightgreen;
+  width: 120px;
+  height: 50px;
+  margin-top: 25px;
+  border-style: solid;
+  border-radius:5px;
+  box-shadow: 10px 10px 5px;
+}
