@@ -8,9 +8,19 @@ body {
 }
 
 #hemglass {
-    margin-left: 100px;
-    margin-top: 20px;
+  margin-left: 150px;
+  margin-top: 20px;
 }
+
+#produktbild {
+  max-width: 120px;
+  max-height: 130px;
+  margin-top: 30px;
+
+
+}
+
+
 
 .top-container {
   display: flex;
@@ -26,22 +36,37 @@ body {
 
 .produkt-container {
   display: flex;
-  max-width: 1000px;
-  height: 700px;
+  width: 700px;
+  height: 1000px;
   margin: auto;
   margin-top: 160px;
   border-radius: 20px;
   background-color: white;
-  padding-top: 20px;
-
-  justify-content: center;
-  align-items: 10px;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: space-around;
   font-family: Arial,sans-serif;
-  font-weight: 800;
-  font-size: 40px;
+  font-weight: 600;
+  font-size: 22px;
   color: #00588e;
-  /* #6acff6 (glassbilsblå)*/
+   /*#6acff6 (glassbilsblå)*/
   font-family: 'Gloria Hallelujah', cursive;
+}
+
+.produkt {
+  display: flex;
+  width: 250px;
+  height: 210px;
+  margin-top: 100px;
+  border-radius: 15px;
+  background-color: lightblue;
+  border: dotted 5px white;
+  box-shadow: 0 0 0 7px lightblue;
+  flex-direction: column;
+  align-items: center;
+
+
+
 }
 
 @font-face {
