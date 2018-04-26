@@ -15,9 +15,7 @@ body {
 }
 
 #fransverige {
-  position: relative;
-  top: 0px;
-  right:40px;
+  right: 40px;
   height: 60px;
   width: 60px;
 }
@@ -40,6 +38,11 @@ body {
   margin-top: 15px;
 }
 
+#Specialsortmentbild {
+  max-width: 160px;
+  max-height: 170px;
+  margin-top: 20px;
+}
 .top-container {
   display: flex;
   position: absolute;
@@ -89,16 +92,20 @@ body {
 }
 
 a {
-  text-decoration: none;
+  text-decoration:none;
 }
 
 a:visited {
   color: inherit;
 }
 
+.produkt:hover {
+  text-decoration: underline;
+}
+
 .produkt-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
   width: 700px;
   height: 1000px;
@@ -114,11 +121,38 @@ a:visited {
   font-family: 'Gloria Hallelujah', cursive;
 }
 
+.rubrik-parent {
+  display: flex;
+  background-color: white;
+  width: 100%;
+  height: 100px;
+  align-content: center;
+
+}
+
+.rubrik-left {
+  display: flex;
+  width: 200px;
+}
+
+.rubrik-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 300px;
+}
+
+.rubrik-right {
+  display: flex;
+  justify-content: flex-end;
+  width: 200px;
+}
+
 .produkter {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin-top: -100px;
+  margin-top: -130px;
   background-color: white;
 }
 
@@ -126,9 +160,10 @@ a:visited {
   display: flex;
   flex-direction: column;
   align-items: center;
+  
   width: 250px;
   height: 210px;
-  margin-top: 70px;
+  margin-top: 50px;
   border-radius: 15px;
   background-color: lightblue;
   border: dotted 5px white;
