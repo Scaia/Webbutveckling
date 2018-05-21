@@ -1,6 +1,10 @@
 
 body {
   background-color: lightblue;
+  background-image: url("Bilder/hemglassbakgrund.png");
+  background-repeat: repeat-y;  /* ingen repris? */
+  background-size: auto;
+  background-position: top 110px right; /* med endast right? Kan inte bestämma mig */
 }
 
 img {
@@ -31,7 +35,7 @@ img {
 }
 
 #hemglass {
-  margin-right: 650px;
+  margin-right: 70%;  /* från mitten */
   margin-top: 20px;
 }
 
@@ -92,9 +96,9 @@ img {
 .top-container {
   display: flex;
   position: absolute;
-  left: 0;
-  right: 0;
   top: 0;
+  left: 0;    /* den fylls inte ut hela vägen annars ??*/
+  right: 0;
   width: 100%;
   height: 105px;
   background-color: #00588e;
@@ -103,42 +107,67 @@ img {
 
 .meny-container {
   display: flex;
-  width: 500px;
-  height: 50px;
+  justify-content: space-between;
+  width: 600px;
+  height: 21px;
   background-color: #00588e;
   position: absolute;
-  bottom: 3px;
+  bottom: 30px;
 }
 
 .overmeny {
   display: flex;
   align-items: center;
   justify-content: center;
-  text-align:center;
-  width: 125px;
-  height: 50px;
-  background-color: #00588e;
-  border-right-style: solid;
-  border-right-color: black;
-  border-right-width: 3px;
-  border-top-style: solid;
-  border-top-color: black;
-  border-top-width: 3px;
-  font-family: Arial,sans-serif;
+  text-align: center;
+  height: 21px;
+  background-color: green;  /*#00588e*/
   font-weight: 600;
   font-size: 20px;
   color: white;
   font-family: 'Gloria Hallelujah', cursive;
-  line-height: 100%;
 }
 
-.overmeny:hover {
+.overmeny > a {
+  position: relative;
+  color: #000;
+}
+
+.overmeny > a:hover {
+  color: #000;
+}
+
+.overmeny > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.overmeny > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+
+/*.overmeny:hover {
   color: #00588e;
   background-color: white;
-}
+}*/
 
 a {
-  text-decoration:none;
+  text-decoration: none;
+  outline: 0;
+  -moz-outline-style: none; /* tar bort "outlinen" runt alla länkar */
 }
 
 a:visited {
@@ -153,15 +182,14 @@ a:visited {
   height: 1000px;
   margin: auto;
   margin-top: 160px;
+  box-shadow: 10px 5px grey;
   border-radius: 20px;
   background-color: white;
   padding: 30px;
-  font-family: Arial,sans-serif;
-  font-weight: 600;
-  font-size: 30px;
-  color: #00588e; /*#6acff6 (glassbilsblå)*/
   font-family: 'Gloria Hallelujah', cursive;
-  box-shadow: 10px 7px grey;
+  font-size: 32px;
+  font-weight: 600;
+  color: #00588e;
 }
 
 .rubrik-parent {
@@ -174,20 +202,20 @@ a:visited {
 
 .rubrik-left {
   display: flex;
-  width: 200px;
+  width: 28%;
 }
 
 .rubrik-center {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 300px;
+  width: 44%;
 }
 
 .rubrik-right {
   display: flex;
   justify-content: flex-end;
-  width: 200px;
+  width: 28%;
 }
 
 .produkter {
