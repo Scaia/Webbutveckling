@@ -36,7 +36,7 @@ img {
 }
 
 #hemglass {
-  margin-right: 70%;
+  margin-right: 670px;
   margin-top: 20px;
 }
 
@@ -120,13 +120,13 @@ img {
 
 .meny-container {
   display: flex;
-  justify-content: center;
-  width: 600px;
-  height: 50px;
+  justify-content: space-between;
+  width: 650px;
+  height: 20px;
   background-color: #00588e;
   position: absolute;
-  bottom: 3px;
-  margin-left: 90px;
+  bottom: 25px;
+  margin-left: 125px;
 }
 
 .overmeny {
@@ -134,29 +134,48 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  width: 150px;
-  height: 50px;
+  height: 20px;
   background-color: #00588e;
-  border-right-style: solid;
-  border-right-color: black;
-  border-right-width: 3px;
-  border-top-style: solid;
-  border-top-color: black;
-  border-top-width: 3px;
   font-weight: 600;
   font-size: 20px;
   color: white;
   font-family: 'Gloria Hallelujah', cursive;
-  line-height: 100%;
 }
 
-.overmeny:hover {
-  color: #00588e;
+.meny-container > a {
+  position: relative;
+  color: #000;
+}
+
+.meny-container > a:hover {
+  color: #000;
+}
+
+.meny-container > a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  bottom: -8px;
+  left: 0;
   background-color: white;
+  border-radius: 2px;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
+}
+
+.meny-container > a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
 }
 
 a {
   text-decoration:none;
+  outline: 0;
+  -moz-outline-style: none;
 }
 
 a:visited {
@@ -178,9 +197,6 @@ a:visited {
   font-family: 'Gloria Hallelujah', cursive;
   font-size: 30px;
   font-weight: 600;
-  text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
-  text-rendering: optimizeLegibility !important;
-  -webkit-font-smoothing: antialiased !important;
   color: #00588e;
 }
 

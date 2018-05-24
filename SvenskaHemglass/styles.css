@@ -35,7 +35,7 @@ img {
 }
 
 #hemglass {
-  margin-right: 70%;  /* från mitten */
+  margin-right: 670px;
   margin-top: 20px;
 }
 
@@ -108,11 +108,12 @@ img {
 .meny-container {
   display: flex;
   justify-content: space-between;
-  width: 600px;
-  height: 21px;
+  width: 550px;
+  height: 20px;
   background-color: #00588e;
   position: absolute;
-  bottom: 30px;
+  bottom: 25px;
+  margin-left: 70px;
 }
 
 .overmeny {
@@ -120,49 +121,43 @@ img {
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: 21px;
-  background-color: green;  /*#00588e*/
+  height: 20px;
+  background-color: #00588e;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 20px; /*samma som font storleken*/
   color: white;
   font-family: 'Gloria Hallelujah', cursive;
 }
 
-.overmeny > a {
+.meny-container > a {
   position: relative;
   color: #000;
 }
 
-.overmeny > a:hover {
+.meny-container > a:hover {
   color: #000;
 }
 
-.overmeny > a:before {
+.meny-container > a:before {
   content: "";
   position: absolute;
   width: 100%;
-  height: 2px;
-  bottom: 0;
+  height: 4px;
+  bottom: -8px;
   left: 0;
-  background-color: #000;
-  visibility: hidden;
+  background-color: white;
+  border-radius: 2px;
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
-  -webkit-transition: all 0.3s ease-in-out 0s;
-  transition: all 0.3s ease-in-out 0s;
+  -webkit-transition: 0.3s ease;
+  transition: 0.3s ease;
 }
 
-.overmeny > a:hover:before {
+.meny-container > a:hover:before {
   visibility: visible;
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
 }
-
-
-/*.overmeny:hover {
-  color: #00588e;
-  background-color: white;
-}*/
 
 a {
   text-decoration: none;
