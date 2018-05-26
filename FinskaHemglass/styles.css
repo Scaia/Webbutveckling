@@ -49,13 +49,13 @@ img {
 #glasspinnarbild {
   max-width: 120px;
   max-height: 130px;
-  margin-top: 10px;
+  margin-top: 30px;
 }
 
 #glasspinnarbild:hover {
-  max-width: 133px;
-  max-height: 145px;
-  margin-top: 2px;
+  max-width: 140px;
+  max-height: 150px;
+  margin-top: 10px;
 }
 
 #finskaisglassbild {
@@ -136,10 +136,10 @@ img {
   text-align: center;
   height: 20px;
   background-color: #00588e;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
   color: white;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Concert One', cursive;
 }
 
 .meny-container > a {
@@ -194,9 +194,9 @@ a:visited {
   border-radius: 20px;
   background-color: white;
   padding: 30px;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Concert One', cursive;
   font-size: 30px;
-  font-weight: 600;
+  font-weight: 400;
   color: #00588e;
 }
 

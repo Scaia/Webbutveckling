@@ -123,10 +123,10 @@ img {
   text-align: center;
   height: 20px;
   background-color: #00588e;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px; /*samma som font storleken*/
   color: white;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Concert One', cursive;
 }
 
 .meny-container > a {
@@ -181,9 +181,9 @@ a:visited {
   border-radius: 20px;
   background-color: white;
   padding: 30px;
-  font-family: 'Gloria Hallelujah', cursive;
+  font-family: 'Concert One', cursive;
   font-size: 32px;
-  font-weight: 600;
+  font-weight: 400;
   color: #00588e;
 }
 
@@ -235,7 +235,7 @@ a:visited {
   font-size: 22px;
 }
 
-@font-face {
+@font-face {    /* lokal font, funkar inte så bra på min windows dator, använder font från google-server istället*/
   font-family: "Gloria Hallelujah";
   font-weight: 400;
   font-style: cursive;
