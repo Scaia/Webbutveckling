@@ -1,0 +1,18 @@
+<html>
+  <head>
+    <title>SpinnerJava</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class=bild><img id = "trollface" src="Bilder/trollface.png" alt="trollface"></div>
+    <script>
+      document.querySelector('.bild img').style.display = 'none';
+      document.querySelector('.bild').classList.add('spinner1');
+      setTimeout(() => {
+        document.querySelector('.bild').classList.remove('spinner1');
+        document.querySelector('.bild img').style.display = 'block';
+      }, 3000);
+    </script>
+  </body>
+</html>
